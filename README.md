@@ -37,3 +37,9 @@ Install Git.
 ```
 sudo apt install git
 ```
+
+Clone the Repo.
+
+```
+git clone https://github.com/operezcham90/office-server.git .
+```
