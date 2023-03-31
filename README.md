@@ -31,3 +31,9 @@ Install Node.
 ```
 sudo apt install nodejs-legacy
 ```
+
+Install Git.
+
+```
+sudo apt install git
+```
