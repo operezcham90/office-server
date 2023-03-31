@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cam</title>
+</head>
+
+<body>
+    <h1>Cam</h1>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas')
+        const context = canvas.getContext('2d')
+
+        navigator.mediaDevices
+            .getUserMedia({ video: true })
+            .then((stream) => {
+                const video = document.createElement('video')
+                video.srcObject = stream
+                video.play()
+                setInterval(() => {
+                    context.drawImage(video, 0, 0, canvas.width, canvas.height)
+                }, 3000)
+            })
+            .catch((err) => {
+                console.error(err)
+            })
+    </script>
+</body>
+
+</html>
