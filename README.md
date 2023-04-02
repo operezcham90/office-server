@@ -43,3 +43,15 @@ Clone the Repo.
 ```
 git clone https://github.com/operezcham90/office-server.git app
 ```
+
+## Android 
+
+Install ADB.
+
+```
+sudo apt-get install android-tools-adb
+```
+
+Root the Android phone using KingRoot https://kingrootofficial.com/
+
+Run commands with ADB.
